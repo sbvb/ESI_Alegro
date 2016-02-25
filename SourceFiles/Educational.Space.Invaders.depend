@@ -1,0 +1,57 @@
+# depslib dependency file v1.0
+1456379820 source:c:\users\rafael\desktop\projetos\educational space invaders\_init_.cpp
+	"Allegro_esi.h"
+
+1453799564 c:\users\rafael\desktop\projetos\educational space invaders\xadrez_tiles.h
+	<iostream>
+	"allegro5/allegro.h"
+
+1453800116 source:c:\users\rafael\desktop\projetos\educational space invaders\xadrez_tiles.cpp
+	<iostream>
+	"allegro5/allegro.h"
+	"Xadrez_tiles.h"
+
+1456369410 c:\users\rafael\desktop\projetos\educational space invaders\allegro_esi.h
+	<iostream>
+	<stdlib.h>
+	<ctime>
+	<cstdio>
+	<cmath>
+	<sstream>
+	<dirent.h>
+	<deque>
+	"allegro5/allegro.h"
+	"allegro5/allegro_image.h"
+	"allegro5/allegro_primitives.h"
+	"allegro5/allegro_font.h"
+	"allegro5/allegro_ttf.h"
+	"allegro5/allegro_audio.h"
+	"allegro5/allegro_acodec.h"
+	"Objects.h"
+	"Sound.h"
+	"Directory.h"
+	"Sound.h"
+
+1454596835 c:\users\rafael\desktop\projetos\educational space invaders\ship.h
+
+1454596835 source:c:\users\rafael\desktop\projetos\educational space invaders\ship.cpp
+	"Allegro_esi.h"
+
+1456286337 c:\users\rafael\desktop\projetos\educational space invaders\sound.h
+	"Directory.h"
+
+1454590637 source:c:\users\rafael\desktop\projetos\educational space invaders\shot.cpp
+
+1456286392 source:c:\users\rafael\desktop\projetos\educational space invaders\sound.cpp
+	"Allegro_esi.h"
+
+1456378187 c:\users\rafael\desktop\projetos\educational space invaders\objects.h
+
+1456379920 source:c:\users\rafael\desktop\projetos\educational space invaders\objects.cpp
+	"Allegro_esi.h"
+
+1456192254 c:\users\rafael\desktop\projetos\educational space invaders\directory.h
+
+1456145677 source:c:\users\rafael\desktop\projetos\educational space invaders\directory.cpp
+	"Allegro_ESI.h"
+
