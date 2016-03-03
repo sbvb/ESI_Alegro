@@ -1,4 +1,4 @@
-#include "Allegro_ESI.h"
+#include "Allegro_esi.h"
 using namespace std;
 
 void Search_Dir::load_files(string direct)
