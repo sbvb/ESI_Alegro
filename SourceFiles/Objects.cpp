@@ -44,7 +44,7 @@ void Object::select_image(string diretorio)
 
     if(!Object_image)
     {
-//        cout << "Image bitmap not loaded" << endl;
+        cout << "Image bitmap not loaded" << endl;
         al_rest(3);
     }
 }
@@ -143,16 +143,14 @@ void Enemies_movement(M_Object *ene, int & x)
     int flag = 0;
     while(tmp)
     {
-        if(tmp->positionX >= 660 )
+        if(tmp->positionX >= Width - 200 - tmp->m_size )
         {
-            cout << "wasn't supposed to enter here" << endl;
             x = 2;
             flag = 1;
             break;
         }
-        else if(tmp->positionX <= 100 )
+        else if(tmp->positionX <= 200 )
         {
-            cout << "or here" << endl;
             x = 0;
             flag = 1;
             break;
@@ -172,22 +170,22 @@ void Enemies_movement(M_Object *ene, int & x)
 
 void Object_Collision(M_Object *obj1, M_Object *obj2)
 {
-    int cx1, cx2; // X and Y coordinates of the objects
+    int cx1, cx2;
     int cy1, cy2;
     int distanc;
-    
-    M_Object *temp = obj2; // temporary object to check for collisions
+
+    M_Object *temp = obj2;
     while(obj1)
     {
         obj2 = temp;
         while(obj2)
         {
-            cx1 = obj1->positionX + obj1->m_size/2;
-            cx2 = obj2->positionX + obj2->m_size/2;
-            cy1 = obj1->positionY + obj1->m_size/2;
-            cy2 = obj2->positionY + obj2->m_size/2;
+            cx1 = obj1->positionX + (obj1->m_size/2);
+            cx2 = obj2->positionX + (obj2->m_size/2);
+            cy1 = obj1->positionY + (obj1->m_size/2);
+            cy2 = obj2->positionY + (obj2->m_size/2);
             distanc = sqrt( (cx1 - cx2)*(cx1 - cx2) + (cy1 - cy2)*(cy1 - cy2));
-            if( distanc <= (obj1->m_size + obj2->m_size)/2)
+            if( distanc <= (obj1->m_size + obj1->m_size)/2 )
             {
                 obj1->destroy = true;
                 if( obj1->type == obj2 ->type)
