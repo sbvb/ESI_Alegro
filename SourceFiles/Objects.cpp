@@ -78,7 +78,7 @@ M_Object *M_Object::create_each(M_Object *parent, int x, int y, int v, int types
 }
 
 ////////////////////////////////////////////////////
-///* Funções que controlam as listas de objetos *///
+///* FunÃ§Ãµes que controlam as listas de objetos *///
 ////////////////////////////////////////////////////
 
 M_Object* M_Object::Clean_list(M_Object *obj, bool clean)
@@ -172,25 +172,23 @@ void Enemies_movement(M_Object *ene, int & x)
 
 void Object_Collision(M_Object *obj1, M_Object *obj2)
 {
-    int cen1;
-    int cen2;
-    int sen1;
-    int sen2;
+    int cx1, cx2; // X and Y coordinates of the objects
+    int cy1, cy2;
     int distanc;
-    M_Object *temp = obj2;
+    
+    M_Object *temp = obj2; // temporary object to check for collisions
     while(obj1)
     {
         obj2 = temp;
         while(obj2)
         {
-            cen1 = obj1->positionX + obj1->m_size/2;
-            cen2 = obj2->positionX + obj2->m_size/2;
-            sen1 = obj1->positionY + obj1->m_size/2;
-            sen2 = obj2->positionY + obj2->m_size/2;
-            distanc = sqrt( pow(cen1 - cen2, 2) + pow(sen1 - sen2, 2));
-            if( distanc == (obj1->m_size + obj2->m_size)/2)
+            cx1 = obj1->positionX + obj1->m_size/2;
+            cx2 = obj2->positionX + obj2->m_size/2;
+            cy1 = obj1->positionY + obj1->m_size/2;
+            cy2 = obj2->positionY + obj2->m_size/2;
+            distanc = sqrt( (cx1 - cx2)*(cx1 - cx2) + (cy1 - cy2)*(cy1 - cy2));
+            if( distanc <= (obj1->m_size + obj2->m_size)/2)
             {
-                cout << obj1->positionX << ", " << obj1->positionY<<", "<<obj2->positionX<<", "<<obj2->positionY<<endl;
                 obj1->destroy = true;
                 if( obj1->type == obj2 ->type)
                 {
