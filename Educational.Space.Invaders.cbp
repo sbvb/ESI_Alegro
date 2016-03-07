@@ -40,7 +40,7 @@
 		<Unit filename="SourceFiles/Objects.h" />
 		<Unit filename="SourceFiles/Sound.cpp" />
 		<Unit filename="SourceFiles/Sound.h" />
-		<Unit filename="SourceFiles/_init_.cpp" />
+		<Unit filename="SourceFiles/main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
