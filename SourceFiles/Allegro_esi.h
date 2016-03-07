@@ -2,6 +2,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <ctime>
+#include <time.h>
 #include <cstdio>
 #include <cmath>
 #include <sstream>
@@ -23,5 +24,6 @@
 
 #define PI 3.14159265
 #define FPS 30.0
-#define Width 800
+#define Width 1000
 #define Height 600
+#define eps 1.0e-8
