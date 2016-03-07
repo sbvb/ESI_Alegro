@@ -33,14 +33,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="Allegro_esi.h" />
-		<Unit filename="Directory.cpp" />
-		<Unit filename="Directory.h" />
-		<Unit filename="Objects.cpp" />
-		<Unit filename="Objects.h" />
-		<Unit filename="Sound.cpp" />
-		<Unit filename="Sound.h" />
-		<Unit filename="_init_.cpp" />
+		<Unit filename="SourceFiles/Allegro_esi.h" />
+		<Unit filename="SourceFiles/Directory.cpp" />
+		<Unit filename="SourceFiles/Directory.h" />
+		<Unit filename="SourceFiles/Objects.cpp" />
+		<Unit filename="SourceFiles/Objects.h" />
+		<Unit filename="SourceFiles/Sound.cpp" />
+		<Unit filename="SourceFiles/Sound.h" />
+		<Unit filename="SourceFiles/_init_.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
