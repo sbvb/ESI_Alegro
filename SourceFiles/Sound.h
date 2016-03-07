@@ -18,6 +18,7 @@ public:
 
     void load_sound(M_Object *obj);
     void load_music();
+    void play_music();
     void stop_music();
     void set_volume(int volume);
 };
